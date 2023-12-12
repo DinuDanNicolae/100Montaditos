@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Collectable
+  - WaterCollectable
   layers:
   - Default
   - TransparentFX
@@ -46,4 +48,7 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 2808874491
+    locked: 0
+  - name: ProgressBar
+    uniqueID: 1237263905
     locked: 0
