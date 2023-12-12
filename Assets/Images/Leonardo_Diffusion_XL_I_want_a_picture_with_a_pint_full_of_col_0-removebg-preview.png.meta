@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: c72c059bb27ffb94f91a01b253ec5777
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 286
+        width: 73
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6ccdaf2a0c02a4899ac15dc44a3a82
+      internalID: -2067842297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 286
+        width: 49
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf99549c2a0ea74b8a664f735205a32
+      internalID: -1105484079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 286
+        width: 71
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0599e0f0c34846e4d99d7fed985a425e
+      internalID: 2039169060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 286
+        width: 45
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ee020b995edff49be8c91712c628d9
+      internalID: -1852404872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 286
+        width: 51
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a2242a588ce6e4d89b0fd31e5433da
+      internalID: 1235992287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 286
+        width: 60
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7360b732257a5c64dbd387a2f4e97c56
+      internalID: -1051923625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 284
+        width: 125
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4ba1664a4386a4695aa02b4ab0d83f
+      internalID: 69887845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 283
+        width: 43
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bfab215860a1e8438731b201f227c42
+      internalID: 1746998054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 148
+        width: 59
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0172de9b121daa34c9c0b3e726b15394
+      internalID: -509705905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 149
+        width: 75
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ddaf7557c74bc42afc4a75af81fe2a
+      internalID: 1520749460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 147
+        width: 125
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505bf34cc3c988b4fbe1cf5d688872c2
+      internalID: 1437873704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 147
+        width: 112
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10a46ed6bc5d8a4585eff2dae352bfe
+      internalID: 69615524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 148
+        width: 64
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c26d53ad5d52634384f1694be7b5891
+      internalID: 936159396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 149
+        width: 56
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a591702be7f45cc42afbc72bf47763aa
+      internalID: 174338953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 149
+        width: 71
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59470fe152c882742b28bcb0e4f4f630
+      internalID: -879151024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 15
+        width: 137
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8cb5b826e7a3a34f97119710288ffd7
+      internalID: 2071171049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 16
+        width: 62
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505dd62fd5b4bcd4d95fff8e6f0e7879
+      internalID: -1894856501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 17
+        width: 46
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09a322d024d142439097b90befc9f14
+      internalID: -829631547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 16
+        width: 68
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1954780f1d1d643828e4af63baf9cc
+      internalID: 981642277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 16
+        width: 46
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e2b1eca22018c48b90ef53cd927a55
+      internalID: 1786066358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 16
+        width: 118
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5456ff00757c78940a0ab2af7fbc228b
+      internalID: -1362745839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 15
+        width: 60
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5b8f1b138bb7f43aeb96235f2db38a
+      internalID: 1694431983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_0: -2067842297
+      Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_1: -1105484079
+      Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_10: 1437873704
+      Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_11: 69615524
+      Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_12: 936159396
+      Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_13: 174338953
+      Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_14: -879151024
+      Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_15: 2071171049
+      Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_16: -1894856501
+      Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_17: -829631547
+      Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_18: 981642277
+      Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_19: 1786066358
+      Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_2: 2039169060
+      Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_20: -1362745839
+      Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_21: 1694431983
+      Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_3: -1852404872
+      Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_4: 1235992287
+      Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_5: -1051923625
+      Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_6: 69887845
+      Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_7: 1746998054
+      Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_8: -509705905
+      Leonardo_Diffusion_XL_I_want_a_picture_with_a_pint_full_of_col_0-removebg-preview_9: 1520749460
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
