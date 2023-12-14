@@ -1,15 +1,29 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ClickableObject : MonoBehaviour
+public class ScenesSwitch : MonoBehaviour
 {
     // Name of the scene to load when clicked
     [SerializeField]
     public string sceneToLoad;
 
+    [SerializeField]
+    private Animator animator;
+
+
+
     // Update is called once per frame
+
+    void Start() {
+        animator = GetComponent<Animator>();
+
+    }
     void Update()
     {
+        Hover();
+
+    
+
         // Check if the left mouse button is clicked
         if (Input.GetMouseButtonDown(0))
         {
@@ -31,4 +45,19 @@ public class ClickableObject : MonoBehaviour
     {
         SceneManager.LoadScene(sceneToLoad);
     }
+
+    void Hover()
+    {
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        if (GetComponent<Collider2D>().OverlapPoint(mousePosition))
+        {
+            animator.SetBool("OnClick", true);
+        }
+        else
+        {
+            animator.SetBool("OnClick", false);
+        }
+    }
+
 }
