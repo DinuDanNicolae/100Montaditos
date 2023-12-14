@@ -27,6 +27,9 @@ public class WifeController : MonoBehaviour
 
     private NavMeshAgent agent;
 
+    [SerializeField]
+    private Animator animator;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -36,6 +39,11 @@ public class WifeController : MonoBehaviour
         waitTime = startWaitTime;
         moveSpot.position = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
         agent.SetDestination(moveSpot.position);
+
+        if (animator == null)
+        {
+            animator = GetComponent<Animator>();
+        }
     }
 
     void Update()
@@ -50,6 +58,7 @@ public class WifeController : MonoBehaviour
             // Start chasing the player
             isChasing = true;
             agent.SetDestination(player.position);
+            animator.SetBool("Walk", true);
         }
         else if (isChasing && distanceToPlayer >= chaseRange)
         {
@@ -65,17 +74,33 @@ public class WifeController : MonoBehaviour
             {
                 if (waitTime <= 0)
                 {
-                    // Assign a new random patrol spot after waiting is done
-                    moveSpot.position = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
-                    agent.SetDestination(moveSpot.position);
+                    Vector2 newMoveSpotPosition = GetRandomPositionThatIsNotObstacle();
+                    moveSpot.position = newMoveSpotPosition;
+                    agent.SetDestination(newMoveSpotPosition);
+                    animator.SetBool("Walk", true);
                     waitTime = startWaitTime;
                 }
                 else
                 {
                     // Decrease wait time
+                    animator.SetBool("Walk", false);
                     waitTime -= Time.deltaTime;
                 }
             }
         }
+    }
+    Vector2 GetRandomPositionThatIsNotObstacle()
+    {
+        Vector2 randomPosition;
+        bool isObstacle;
+
+        do
+        {
+            randomPosition = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+            isObstacle = Physics2D.OverlapCircle(randomPosition, 0.1f, LayerMask.GetMask("Obstacles")) != null;
+        } 
+        while (isObstacle);
+
+        return randomPosition;
     }
 }
