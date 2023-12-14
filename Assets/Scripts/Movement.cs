@@ -90,24 +90,27 @@ public class Movement : MonoBehaviour
             float moveHorizontal = Input.GetAxis("Horizontal");
             float moveVertical = Input.GetAxis("Vertical");
 
-            // Store the input and set the velocity of the Rigidbody2D
+            // Store the input and calculate the proposed new position
             Vector2 movement = new Vector2(moveHorizontal, moveVertical);
-            rb.velocity = movement * speed;
+            Vector2 newPosition = rb.position + movement * speed * Time.fixedDeltaTime;
 
-            // Update the animator parameters
-            if (movement != Vector2.zero)
+            // Check if the new position would collide with an obstacle
+            if (!IsCollidingWithObstacle(newPosition))
             {
-                animator.SetBool("Walk", true);
-            }
-            else
-            {
-                animator.SetBool("Walk", false);
+                rb.MovePosition(newPosition);
+                animator.SetBool("Walk", movement != Vector2.zero);
             }
         }
         else
         {
-            // If the player can't move, stop the velocity
             rb.velocity = Vector2.zero;
         }
     }
+
+    private bool IsCollidingWithObstacle(Vector2 newPosition)
+    {
+        Collider2D hitCollider = Physics2D.OverlapCircle(newPosition, 0.1f, LayerMask.GetMask("Obstacles"));
+        return hitCollider != null;
+    }
+
 }
