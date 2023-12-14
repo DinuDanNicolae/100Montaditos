@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 40
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,7 +121,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Screenshot 2023-12-11 234908_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 346
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad71e28393572746a816384f284c3e2
+      internalID: 1907916719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Screenshot 2023-12-11 234908_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 307
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e508c421dd8376c489fa3e0312abe989
+      internalID: 1983148346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Screenshot 2023-12-11 234908_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 265
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61246ed8b3a3fcc4c8aa3b390e2f73c6
+      internalID: -617248151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Screenshot 2023-12-11 234908_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 198.125
+        width: 44
+        height: 48.875
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3ef6222cc34d341a4e07d1602ce9ef
+      internalID: 2038133452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Screenshot 2023-12-11 234908_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150.125
+        width: 44
+        height: 48.875
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b042f77da9d25744b2afdca052ebbd6
+      internalID: -170772487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Screenshot 2023-12-11 234908_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 102.125
+        width: 44
+        height: 48.875
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fddaaa4433bc7cb45874a929d54b642c
+      internalID: -537830788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Screenshot 2023-12-11 234908_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 54.125
+        width: 44
+        height: 48.875
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb71ae50c22d7846b99ad57f7b749ba
+      internalID: 81871196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Screenshot 2023-12-11 234908_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6.125
+        width: 44
+        height: 48.875
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c718be9a64cc7443a87071ecfe7d622
+      internalID: 1024332922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +300,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Screenshot 2023-12-11 234908_0: 1907916719
+      Screenshot 2023-12-11 234908_1: 1983148346
+      Screenshot 2023-12-11 234908_2: -617248151
+      Screenshot 2023-12-11 234908_3: 2038133452
+      Screenshot 2023-12-11 234908_4: -170772487
+      Screenshot 2023-12-11 234908_5: -537830788
+      Screenshot 2023-12-11 234908_6: 81871196
+      Screenshot 2023-12-11 234908_7: 1024332922
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
