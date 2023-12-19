@@ -32,7 +32,7 @@ public class CollectablesSpawn : MonoBehaviour
             yield return new WaitForSeconds(Random.Range(minTime, maxTime));
             Instantiate(
                 prefabs[Random.Range(0, prefabs.Count)],
-                new Vector3(Random.Range(-75, 7.5f), Random.Range(0.5f, 36.1f), 0),
+                new Vector3(Random.Range(-7.06f, 7.68f), Random.Range(-3.96f, 3.49f), 0),
                 Quaternion.identity
             );
         }
