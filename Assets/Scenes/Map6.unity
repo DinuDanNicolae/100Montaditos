@@ -817,6 +817,22 @@ PrefabInstance:
       propertyPath: minY
       value: -4.68
       objectReference: {fileID: 0}
+    - target: {fileID: 4096493906512504459, guid: a7edbef7f1b4cc04c9357ccf7da01dcf, type: 3}
+      propertyPath: endPoint.x
+      value: 6.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4096493906512504459, guid: a7edbef7f1b4cc04c9357ccf7da01dcf, type: 3}
+      propertyPath: endPoint.y
+      value: -4.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 4096493906512504459, guid: a7edbef7f1b4cc04c9357ccf7da01dcf, type: 3}
+      propertyPath: startPoint.x
+      value: 6.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4096493906512504459, guid: a7edbef7f1b4cc04c9357ccf7da01dcf, type: 3}
+      propertyPath: startPoint.y
+      value: -4.68
+      objectReference: {fileID: 0}
     - target: {fileID: 5003154843254464492, guid: a7edbef7f1b4cc04c9357ccf7da01dcf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.11
