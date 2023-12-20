@@ -3,93 +3,139 @@ using UnityEngine.AI;
 
 public class WifeController : MonoBehaviour
 {
-    [SerializeField]
-    private float startWaitTime; // time to wait at each spot
+    [Header("Patrol Settings")]
+    [SerializeField] private float startWaitTime = 3f; // Time to wait at each spot
+    [SerializeField] private Transform moveSpot; // Patrol move spot
+    [SerializeField] private float minX = -10f;
+    [SerializeField] private float maxX = 10f;
+    [SerializeField] private float minY = -10f;
+    [SerializeField] private float maxY = 10f;
 
-    [SerializeField]
-    private Transform moveSpot; // Patrol move spot
-    [SerializeField]
-    private float minX;
-    [SerializeField]
-    private float maxX;
-    [SerializeField]
-    private float minY;
-    [SerializeField]
-    private float maxY;
+    [Header("Chase Settings")]
+    [SerializeField] private Transform player; // Reference to the player's transform
+    [SerializeField] private float chaseRange = 5f; // The range at which the wife will start to chase the player
 
-    [SerializeField]
-    private Transform player; // Reference to the player's transform
-    [SerializeField]
-    private float chaseRange; // The range at which the enemy will start to chase the player
-
-    private float waitTime; // time to wait at each spot
-    private bool isChasing; // Whether the enemy is currently chasing the player
+    [Header("Appearance Settings")]
+    [SerializeField] private float maxAppearanceInterval = 10f; // Maximum time before disappearing
+    [SerializeField] private Vector3 startPoint = new Vector3(0.0f, 0.0f, 0.0f);
+    [SerializeField] private Vector3 endPoint = new Vector3(0.0f, 0.0f, 0.0f);
+    private float waitTime; // Current wait time
+    private bool isChasing; // Whether the wife is currently chasing the player
+    private bool isActive; // Whether the wife is currently active
+    private float nextAppearanceTime; // Time for next appearance or disappearance
+    private bool firstApperance;
+    private float patrolTimer = 0f;
 
     private NavMeshAgent agent;
-
-    [SerializeField]
     private Animator animator;
+
+    private Renderer wifeRenderer; // Renderer for the wife
 
     void Start()
     {
+        waitTime = startWaitTime;
+        isActive = false; // Start inactive
+
         player = GameObject.FindGameObjectWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
-        waitTime = startWaitTime;
-        moveSpot.position = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
-        agent.SetDestination(moveSpot.position);
+        animator = GetComponent<Animator>() ?? gameObject.AddComponent<Animator>();
 
-        if (animator == null)
-        {
-            animator = GetComponent<Animator>();
-        }
+        wifeRenderer = GetComponent<Renderer>(); // Get the Renderer component
+        wifeRenderer.enabled = false; // Make wife invisible at start
+
+        SetNextAppearanceTime();
     }
 
     void Update()
     {
-        Debug.Log("Player position: " + player.position);
-        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
-        Debug.Log(distanceToPlayer);
+        if (!isActive && Time.time >= nextAppearanceTime)
+        {
+            ReturnFromOffscreen();
+        }
 
-        // Check if the player is within chase range
+        if (isActive)
+        {
+            PatrolOrChasePlayer();
+
+            // Update the patrol timer
+            patrolTimer += Time.deltaTime;
+
+            // Check if 20 seconds have passed
+            if (patrolTimer >= 20f)
+            {
+                MoveToEndPoint();
+            }
+        }
+    }
+    private void MoveToEndPoint()
+    {
+        isChasing = false;
+        isActive = false;
+        agent.SetDestination(endPoint); // Set destination to endPoint
+        animator.SetBool("Walk", true);
+
+        // Check if the wife has reached the endPoint
+        //!agent.pathPending && 
+        if (agent.remainingDistance <= agent.stoppingDistance)
+        {
+            wifeRenderer.enabled = false;
+            animator.SetBool("Walk", false);
+            Destroy(gameObject); // Destroy the object
+        }
+    }
+    private void SetNextAppearanceTime()
+    {
+        nextAppearanceTime = Time.time + Random.Range(0f, 40f); // Random time between 10 and 20 seconds
+    }
+
+    private void ReturnFromOffscreen()
+    {
+        Debug.Log("Wife starts patrolling!");
+        isActive = true;
+        wifeRenderer.enabled = true; // Make wife visible
+        SetNewPatrolDestination();
+    }
+    private void PatrolOrChasePlayer()
+    {
+        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+
         if (distanceToPlayer < chaseRange)
         {
-            // Start chasing the player
             isChasing = true;
             agent.SetDestination(player.position);
             animator.SetBool("Walk", true);
         }
         else if (isChasing && distanceToPlayer >= chaseRange)
         {
-            // Stop chasing the player and return to patrolling
             isChasing = false;
         }
 
-        // If not chasing, patrol behavior
-        if (!isChasing)
+        if (!isChasing && !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
         {
-            // Check if the agent has reached the destination (moveSpot)
-            if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
+            if (waitTime <= 0)
             {
-                if (waitTime <= 0)
-                {
-                    Vector2 newMoveSpotPosition = GetRandomPositionThatIsNotObstacle();
-                    moveSpot.position = newMoveSpotPosition;
-                    agent.SetDestination(newMoveSpotPosition);
-                    animator.SetBool("Walk", true);
-                    waitTime = startWaitTime;
-                }
-                else
-                {
-                    // Decrease wait time
-                    animator.SetBool("Walk", false);
-                    waitTime -= Time.deltaTime;
-                }
+                SetNewPatrolDestination();
+                waitTime = startWaitTime;
+            }
+            else
+            {
+                animator.SetBool("Walk", false);
+                waitTime -= Time.deltaTime;
             }
         }
     }
-    Vector2 GetRandomPositionThatIsNotObstacle()
+
+    private void SetNewPatrolDestination()
+    {
+        Vector2 newMoveSpotPosition = GetRandomPositionThatIsNotObstacle();
+        moveSpot.position = newMoveSpotPosition;
+        agent.SetDestination(newMoveSpotPosition);
+        animator.SetBool("Walk", true);
+    }
+
+    private Vector2 GetRandomPositionThatIsNotObstacle()
     {
         Vector2 randomPosition;
         bool isObstacle;
@@ -98,7 +144,7 @@ public class WifeController : MonoBehaviour
         {
             randomPosition = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
             isObstacle = Physics2D.OverlapCircle(randomPosition, 0.1f, LayerMask.GetMask("Obstacles")) != null;
-        } 
+        }
         while (isObstacle);
 
         return randomPosition;
