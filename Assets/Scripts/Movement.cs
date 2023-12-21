@@ -62,7 +62,7 @@ public class Movement : MonoBehaviour
             // Update the score
             score += other.gameObject.CompareTag("Collectable") ? 1 : -1;
             sliderController.UpdateSliderValue(score); // Uncomment if slider update is needed
-            scoreText.text = "Beers: " + (int)score;
+
 
             // Destroy the collectable
             Destroy(other.gameObject);
@@ -91,19 +91,15 @@ public class Movement : MonoBehaviour
     private int currentScore = 0;
     private IEnumerator UpdateScoreText()
     {
-        yield return new WaitForSeconds(5f); // Wait for 60 seconds
+        yield return new WaitForSeconds(60.0f); // Wait for 60 seconds
 
         canMove = false;
         // scoreText.text = "Score: " + score.ToString(); // Update the score text
-        while (timer < score)
+        while (timer <= score)
         {
-
+            scoreText.text = "Beers: " + timer;
             timer++;
-            if (currentScore < score)
-            {
-                currentScore++;
-                scoreText.text = "Beers: " + currentScore;
-            }
+
             yield return new WaitForSeconds(0.2f);
         }
 
