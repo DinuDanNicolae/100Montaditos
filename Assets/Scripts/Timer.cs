@@ -8,7 +8,7 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public float remainingTime = 5;
+    public float remainingTime = 10;
 
     [SerializeField]
     private TextMeshProUGUI txtMesh;
@@ -36,8 +36,6 @@ public class Timer : MonoBehaviour
 
         if (remainingTime < 0)
         {
-            // finalScore = CalculateFinalScore();
-            // txtMesh.text = "Final Score: " + finalScore;
             startMenuButton.gameObject.SetActive(true);
         }
     }
